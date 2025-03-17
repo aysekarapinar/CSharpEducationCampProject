@@ -241,7 +241,7 @@ Bu projede, **Entity Framework** kullanılarak bir tur uygulamasında **konum y�
  
 ## Proje 17: Entity Framework Metotları ve LINQ Sorgular
 
-![Image Alt](https://github.com/aysekarapinar/CSharpEducationCamp/blob/66dc50ae725df86c154a472f12d68a16bdf11b88/FrmStatistics.jpg)
+![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/aa974c101f0b7b14077be49b4c47e7d7157fe2e4/FrmStatistics.jpg)
  *"Entity Framework ve LINQ sorgularıyla gerçekleştirilen veri istatistiklerinin gösterildiği bir ekran görüntüsü. İstatistikler, veritabanındaki verilerin gruplama, sıralama ve analiz işlemlerinden elde edilmiştir."*
 
 Bu projede, **Entity Framework** ve **LINQ** kullanılarak veri sorgulama ve manipülasyonu işlemleri gerçekleştirilmiştir. Veritabanı işlemlerinin performanslı ve okunabilir bir şekilde yapılması hedeflenmiştir.   
