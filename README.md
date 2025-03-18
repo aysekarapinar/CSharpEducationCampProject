@@ -265,12 +265,12 @@ Bu projede, **Entity Framework** ve **LINQ** kullanılarak veri sorgulama ve man
 
 ## Proje 18: EntityState Komutları, Generic Repository Sınıfı ve Ef Sınıfları
 
-## 📌 Amaç
+### 📌 Amaç
 Bu proje, **EntityState komutları**, **Generic Repository Deseni** ve **Entity Framework (EF) Sınıfları**nın uygulanmasını göstermektedir. Amaç, **Entity Framework Core** kullanarak temiz, sürdürülebilir ve ölçeklenebilir bir veri erişim katmanı oluşturmaktır.
 
-## 📚 Konular
+### 📚 Konular
 
-### 1. EntityState Komutları
+#### 1. EntityState Komutları
 `EntityState`, **Entity Framework** içinde bir varlığın (entity) durumunu temsil eder. Yaygın olarak kullanılan durumlar şunlardır:
 
 - **Added**: Yeni bir varlığı ekler ve veritabanına kaydedilmesini sağlar.
@@ -279,32 +279,32 @@ Bu proje, **EntityState komutları**, **Generic Repository Deseni** ve **Entity 
 - **Unchanged**: Varlığın değişmediğini belirtir.
 - **Detached**: Varlığın bağlam tarafından izlenmediğini gösterir.
 
-### 2. Generic Repository Deseni
+#### 2. Generic Repository Deseni
 **Generic Repository Deseni**, yaygın CRUD (Create, Read, Update, Delete) işlemlerini soyutlayarak esnek ve tekrar kullanılabilir bir veri erişim katmanı sağlar.
 
-### 3. Entity Framework Sınıfları
+#### 3. Entity Framework Sınıfları
 
 Entity Framework Core ile çalışmak için modellerinizi ve DbContext sınıfınızı tanımlayın.
 
 ## Proje 19:  Business Katmanı ve Logic Kurallar
 
-## 📌 Amaç
+### 📌 Amaç
 Bu proje, C# ile yazılım geliştirirken Business Katmanı (İş Katmanı) ve Logic Kuralları (İş Mantığı Kuralları) hakkında bilgi vermek amacıyla hazırlanmıştır. Business katmanı, bir uygulamanın iş kurallarını ve mantığını içeren katmandır. Bu katman, uygulamanın çekirdek işlevselliğini yönetir ve genellikle diğer katmanlarla (veri erişim katmanı, sunum katmanı vb.) etkileşim halindedir.
 
-## Business Katmanı Nedir?
+### Business Katmanı Nedir?
 Business katmanı, bir uygulamanın iş kurallarını ve iş mantığını içeren katmandır. Bu katman, kullanıcı arayüzü (UI) ve veri erişim katmanı (DAL) arasında köprü görevi görür. Business katmanı, uygulamanın temel işlevselliğini yönetir ve aşağıdaki görevleri üstlenir:
  - **İş Kurallarını Uygulama**: Uygulamanın iş gereksinimlerine uygun kuralları tanımlar ve uygular.
  - **Veri Validasyonu**: Kullanıcıdan veya diğer katmanlardan gelen verilerin geçerliliğini kontrol eder.
  - **İş Mantığı İşlemleri**: Veri üzerinde hesaplamalar, dönüşümler veya diğer işlemleri gerçekleştirir.
  - **Transaction Yönetimi**: Birden fazla işlemi bir arada yöneterek tutarlılık sağlar.
 
-## Business Katmanı ve Logic Kurallarının Faydaları
+### Business Katmanı ve Logic Kurallarının Faydaları
  - **Modülerlik**: İş mantığı, uygulamanın diğer katmanlarından ayrılarak daha modüler bir yapı sunar.
  - **Yeniden Kullanılabilirlik**: İş kuralları, farklı projelerde veya uygulamalarda yeniden kullanılabilir.
  - **Test Edilebilirlik**: İş mantığı, bağımsız olarak test edilebilir.
  - **Merkezi Yönetim**: İş kuralları tek bir yerde yönetilir, bu da bakımı kolaylaştırır.
 
-## Business Katmanı Nasıl Oluşturulur?
+### Business Katmanı Nasıl Oluşturulur?
 Business katmanı, genellikle ayrı bir proje veya klasör olarak düzenlenir. Bu katman, aşağıdaki bileşenleri içerebilir:
  - **Servis Sınıfları**: İş mantığını uygulayan sınıflar.
  - **Manager Sınıfları**: Belirli bir işlevselliği yöneten sınıflar.
@@ -313,13 +313,13 @@ Business katmanı, genellikle ayrı bir proje veya klasör olarak düzenlenir. B
 
 ## Proje 20: Dependency Injection (Bağımlılık Enjeksiyonu)
 
-## 📌 Amaç
+### 📌 Amaç
 Bu proje, C# dilinde Dependency Injection (DI) kavramını anlamak ve uygulamak isteyen geliştiriciler için hazırlanmıştır. Dependency Injection, yazılım tasarımında kullanılan bir desen olup, bağımlılıkların yönetilmesini ve kodun daha esnek, test edilebilir ve bakımı kolay hale getirilmesini sağlar.
 
-## Dependency Injection Nedir?
+### Dependency Injection Nedir?
 Dependency Injection (DI), bir sınıfın bağımlı olduğu diğer sınıfları (servisleri) dışarıdan alması prensibine dayanır. Bu sayede, sınıflar arasındaki bağımlılıklar azaltılır ve kod daha modüler hale gelir. DI, özellikle büyük ölçekli uygulamalarda ve test edilebilir kod yazmada oldukça faydalıdır.
 
-# Neden Dependency Injection Kullanmalıyız?
+### Neden Dependency Injection Kullanmalıyız?
 
 - **Test Edilebilirlik**: DI sayesinde, bir sınıfın bağımlılıklarını mock veya stub nesnelerle değiştirerek kolayca unit testler yazabilirsiniz.
 - **Esneklik**: Bağımlılıklar dışarıdan enjekte edildiği için, uygulamanın davranışını değiştirmek veya farklı senaryolara uyum sağlamak daha kolaydır.
@@ -328,15 +328,15 @@ Dependency Injection (DI), bir sınıfın bağımlı olduğu diğer sınıfları
 
 ## Proje  21: Entitye Özgü Metot Yazmak
 
-## 📌 Amaç
+### 📌 Amaç
 Bu proje, C# ve Entity Framework Core (EF Core) kullanarak entity'lerinize özgü metotlar yazma konusunda bilgi vermek amacıyla hazırlanmıştır. Entity'lerinize özgü metotlar yazarak, veritabanı işlemlerini daha modüler, okunabilir ve yeniden kullanılabilir hale getirebilirsiniz.
 
-## Entity'e Özgü Metot Nedir?
+### Entity'e Özgü Metot Nedir?
 Entity'e özgü metotlar, bir entity (varlık) sınıfı içinde tanımlanan ve o entity'nin iş mantığını (business logic) kapsayan metotlardır. Bu metotlar, entity'nin özelliklerini kullanarak belirli işlemleri gerçekleştirir ve genellikle CRUD (Create, Read, Update, Delete) işlemlerini destekler.
 
 Entity'e özgü metotlar, entity'nin davranışını merkezileştirir ve bu davranışı uygulamanın diğer katmanlarından soyutlar. Bu sayede, kod tekrarı azalır ve bakım kolaylaşır.
 
-## Entity'e Özgü Metotların Faydaları
+### Entity'e Özgü Metotların Faydaları
  - **Kapsülleme**: Entity'nin iş mantığı, entity sınıfı içinde kapsüllenir ve dışarıya açılmaz.
  - **Yeniden Kullanılabilirlik**: Entity'ye özgü metotlar, uygulamanın farklı yerlerinde tekrar kullanılabilir.
  - **Test Edilebilirlik**: Entity'nin davranışı, bağımsız olarak test edilebilir.
@@ -345,17 +345,17 @@ Entity'e özgü metotlar, entity'nin davranışını merkezileştirir ve bu davr
 ## Proje 22 / 23: Drapper Kullanımı ve Dapper İşlemlerinin Tamamlanması
 Bu rehber, Dapper kütüphanesinin C# projelerinde nasıl kullanılacağını ve Dapper ile veritabanı işlemlerinin nasıl tamamlanacağını açıklamak amacıyla hazırlanmıştır. Dapper, .NET platformunda yüksek performanslı bir mikro ORM (Object-Relational Mapping) aracıdır ve veritabanı işlemlerini hızlı ve kolay bir şekilde gerçekleştirmek için kullanılır.
 
-## 📌 Amaç
+### 📌 Amaç
 Bu projenin amacı, Dapper kütüphanesini kullanarak veritabanı işlemlerini nasıl gerçekleştirebileceğinizi adım adım göstermektir. Proje, aşağıdaki konuları kapsar:
  - **Dapper'ın kurulumu ve yapılandırılması.**
  - **Temel CRUD (Create, Read, Update, Delete) işlemlerinin Dapper ile nasıl yapılacağı.**
  - **Dapper'ın avantajları ve ne zaman kullanılması gerektiği.**
  - **Dapper ile gelişmiş sorguların nasıl yazılacağı.**
 
-## Projenin Konusu
+### Projenin Konusu
 Proje, bir veritabanı üzerinde temel ve gelişmiş işlemlerin Dapper kullanılarak nasıl gerçekleştirileceğini ele alır.
 
-## Projenin İçeriği 
+### Projenin İçeriği 
  - **Dapper'ın Kurulumu**: Projeye Dapper'ın nasıl ekleneceği.
  - **Veritabanı Bağlantısı**: Dapper ile veritabanı bağlantısının nasıl kurulacağı.
  - **CRUD İşlemleri**:
@@ -369,14 +369,14 @@ Proje, bir veritabanı üzerinde temel ve gelişmiş işlemlerin Dapper kullanı
 ## Proje 24 / 25 C# ile MongoDb Kullanımı 
 Bu rehber, MongoDB'nin C# projelerinde nasıl kullanılacağını açıklamak amacıyla hazırlanmıştır. MongoDB, NoSQL tabanlı bir belge veritabanıdır ve esnek şema yapısı, yüksek performansı ve ölçeklenebilirliği ile öne çıkar. Bu proje, C# ile MongoDB'nin nasıl entegre edileceğini ve temel işlemlerin nasıl gerçekleştirileceğini adım adım göstermektedir.
 
-## 📌 Amaç
+### 📌 Amaç
 Bu projenin amacı, C# ile MongoDB kullanarak veritabanı işlemlerini nasıl gerçekleştirebileceğinizi adım adım göstermektir. Proje, aşağıdaki hedefleri kapsar:
  - **MongoDB'nin C# projelerine nasıl entegre edileceğini öğrenmek.**
  - **Temel CRUD işlemlerini MongoDB ile nasıl yapılacağını göstermek.**
  - **MongoDB'nin avantajlarını ve kullanım senaryolarını anlamak.**
  - **Gelişmiş sorgular ve performans optimizasyonu hakkında bilgi vermek.**
 
-## Projenin Konusu
+### Projenin Konusu
 Proje, MongoDB'nin C# ile nasıl kullanılacağını ele alır. MongoDB, JSON benzeri belgelerle çalışan bir NoSQL veritabanıdır ve bu projede aşağıdaki konular işlenir:
  - **MongoDB'nin kurulumu ve yapılandırılması.**
  - **MongoDB ile temel CRUD (Create, Read, Update, Delete) işlemlerinin nasıl yapılacağı.**
@@ -385,7 +385,7 @@ Proje, MongoDB'nin C# ile nasıl kullanılacağını ele alır. MongoDB, JSON be
 
 ![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/49b553efc5ab1297dcaa3911f949ef22e0557f52/mongoDb%20Form.png)
 
-## Projenin İçeriği
+### Projenin İçeriği
  - **MongoDB Kurulumu**: MongoDB'nin yerel makineye veya bulut servisine (MongoDB Atlas) nasıl kurulacağı.
  - **MongoDB Driver Kurulumu**: C# projesine MongoDB .NET Driver'ın nasıl ekleneceği.
  - **Veritabanı Bağlantısı**: MongoDB'ye nasıl bağlanılacağı.
@@ -400,7 +400,7 @@ Proje, MongoDB'nin C# ile nasıl kullanılacağını ele alır. MongoDB, JSON be
 ## Proje 26/27 C# ile PostgreSQL Kullanımı
 Bu rehber, PostgreSQL'in C# projelerinde nasıl kullanılacağını açıklamak amacıyla hazırlanmıştır. PostgreSQL, açık kaynaklı, güçlü ve ölçeklenebilir bir ilişkisel veritabanı yönetim sistemidir (RDBMS). Bu proje, C# ile PostgreSQL'nin nasıl entegre edileceğini ve temel işlemlerin nasıl gerçekleştirileceğini adım adım göstermektedir.
 
-## 📌 Amaç
+### 📌 Amaç
 Proje, PostgreSQL'in C# ile nasıl kullanılacağını ele alır. PostgreSQL, SQL standartlarına uygun, güvenilir ve geniş özelliklere sahip bir veritabanıdır. Bu projede aşağıdaki konular işlenir:
  - **PostgreSQL'nin kurulumu ve yapılandırılması.**
  - **PostgreSQL ile temel CRUD (Create, Read, Update, Delete) işlemlerinin nasıl yapılacağı.**
@@ -416,7 +416,7 @@ Bu projenin amacı, C# ile PostgreSQL kullanarak veritabanı işlemlerini nasıl
 
 ![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/0719f0eb05fe943af90b1d2b7e598c18aa8d80ac/PostgreSQL%20Form.png)
 
-## Projenin İçeriği
+### Projenin İçeriği
 Proje, aşağıdaki adımları içerir:
  - **PostgreSQL Kurulumu**: PostgreSQL'nin yerel makineye veya bulut servisine nasıl kurulacağı.
  - **Npgsql Kurulumu**: C# projesine Npgsql (PostgreSQL .NET Driver) nasıl ekleneceği.
@@ -432,7 +432,7 @@ Proje, aşağıdaki adımları içerir:
 ## 28/19/30 Finansal CRM Final Projesi
 Bu proje, C# ve MSSQL kullanılarak geliştirilen bir Finansal CRM (Customer Relationship Management) uygulamasıdır. Eğitim kampı süresince öğrendiğimiz tüm konuları kapsayan bu proje, finansal müşteri ilişkileri yönetimi için temel işlevleri sunar. Proje, müşteri bilgileri, finansal işlemler, raporlama ve analiz gibi işlemleri gerçekleştirmek üzere tasarlanmıştır.
 
-## Projenin Konusu
+### Projenin Konusu
 - **Finansal İşlemler**: Müşterilerle yapılan finansal işlemlerin kaydedilmesi ve takibi.
 - **Raporlama ve Analiz**: Müşteri ve finansal işlemlerle ilgili raporların oluşturulması.
 - **Veritabanı Yönetimi**: MSSQL kullanılarak veritabanı tasarımı ve yönetimi.
@@ -441,7 +441,7 @@ Bu proje, C# ve MSSQL kullanılarak geliştirilen bir Finansal CRM (Customer Rel
 
 ![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/e2c0c2e492109643a3b6bc38bbfc757928c8d417/FrmFinancial.png)
 
-## Projenin Amacı
+### Projenin Amacı
 Bu projenin amacı, eğitim kampı süresince öğrendiğimiz tüm konuları bir araya getirerek gerçek hayatta kullanılabilecek bir uygulama geliştirmektir. Proje, aşağıdaki hedefleri kapsar:
  - **C# ve MSSQL Entegrasyonu**: C# ile MSSQL veritabanı arasında bağlantı kurarak veri yönetimi sağlamak.
  - **CRUD İşlemleri**: Müşteri ve finansal işlemler için temel CRUD (Create, Read, Update, Delete) işlemlerini gerçekleştirmek.
@@ -452,19 +452,19 @@ Bu projenin amacı, eğitim kampı süresince öğrendiğimiz tüm konuları bir
 
 ![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/818a3beb80afa83d294ea49732a172c475709198/FrmCategory.png)
 
-## Projenin İçeriği
+### Projenin İçeriği
 
-### Finansal İşlemler
+#### Finansal İşlemler
  - **İşlem Ekleme**: Müşterilerle yapılan finansal işlemlerin kaydedilmesi.
  - **İşlem Güncelleme**: Finansal işlem bilgilerinin güncellenmesi.
  - **İşlem Silme**: Finansal işlemlerin silinmesi.
  - **İşlem Listeleme**: Tüm finansal işlemlerin listelenmesi.
 
-###  Veritabanı Tasarımı
+####  Veritabanı Tasarımı
  - **MSSQL Veritabanı**: Müşteri ve finansal işlem bilgilerinin saklandığı veritabanı.
  - **Tablo Yapısı**: Customers, FinancialTransactions gibi tabloların tasarımı.
 
-###  C# Backend Geliştirme
+####  C# Backend Geliştirme
  - **CRUD İşlemleri**: C# ile MSSQL üzerinde CRUD işlemlerinin gerçekleştirilmesi.
  - **Business Logic**: İş mantığının C# ile uygulanması.
  - **Data Access Layer (DAL)**: Veritabanı erişim katmanının oluşturulması.
