@@ -414,6 +414,8 @@ Bu projenin amacı, C# ile PostgreSQL kullanarak veritabanı işlemlerini nasıl
  - **PostgreSQL'nin avantajlarını ve kullanım senaryolarını anlamak.**
  - **Gelişmiş sorgular ve performans optimizasyonu hakkında bilgi vermek.**
 
+![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/0719f0eb05fe943af90b1d2b7e598c18aa8d80ac/PostgreSQL%20Form.png)
+
 ## Projenin İçeriği
 Proje, aşağıdaki adımları içerir:
  - **PostgreSQL Kurulumu**: PostgreSQL'nin yerel makineye veya bulut servisine nasıl kurulacağı.
