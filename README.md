@@ -383,6 +383,8 @@ Proje, MongoDB'nin C# ile nasıl kullanılacağını ele alır. MongoDB, JSON be
  - **MongoDB'nin avantajları ve ne zaman kullanılması gerektiği.**
  - **MongoDB ile gelişmiş sorguların nasıl yazılacağı.**
 
+![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/49b553efc5ab1297dcaa3911f949ef22e0557f52/mongoDb%20Form.png)
+
 ## Projenin İçeriği
  - **MongoDB Kurulumu**: MongoDB'nin yerel makineye veya bulut servisine (MongoDB Atlas) nasıl kurulacağı.
  - **MongoDB Driver Kurulumu**: C# projesine MongoDB .NET Driver'ın nasıl ekleneceği.
