@@ -429,4 +429,45 @@ Proje, aşağıdaki adımları içerir:
  - **Gelişmiş Sorgular**: Join, transaction ve stored procedure kullanımı.
  - **Performans Optimizasyonu**: PostgreSQL'nin performans avantajlarının gösterilmesi.
 
-## 28/19/30 Finansal Crm Final Projesi
+## 28/19/30 Finansal CRM Final Projesi
+Bu proje, C# ve MSSQL kullanılarak geliştirilen bir Finansal CRM (Customer Relationship Management) uygulamasıdır. Eğitim kampı süresince öğrendiğimiz tüm konuları kapsayan bu proje, finansal müşteri ilişkileri yönetimi için temel işlevleri sunar. Proje, müşteri bilgileri, finansal işlemler, raporlama ve analiz gibi işlemleri gerçekleştirmek üzere tasarlanmıştır.
+
+## Projenin Konusu
+- **Finansal İşlemler**: Müşterilerle yapılan finansal işlemlerin kaydedilmesi ve takibi.
+- **Raporlama ve Analiz**: Müşteri ve finansal işlemlerle ilgili raporların oluşturulması.
+- **Veritabanı Yönetimi**: MSSQL kullanılarak veritabanı tasarımı ve yönetimi.
+- **C# ile Backend Geliştirme**: C# kullanılarak backend işlemlerinin gerçekleştirilmesi.
+
+
+![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/e2c0c2e492109643a3b6bc38bbfc757928c8d417/FrmFinancial.png)
+
+## Projenin Amacı
+Bu projenin amacı, eğitim kampı süresince öğrendiğimiz tüm konuları bir araya getirerek gerçek hayatta kullanılabilecek bir uygulama geliştirmektir. Proje, aşağıdaki hedefleri kapsar:
+ - **C# ve MSSQL Entegrasyonu**: C# ile MSSQL veritabanı arasında bağlantı kurarak veri yönetimi sağlamak.
+ - **CRUD İşlemleri**: Müşteri ve finansal işlemler için temel CRUD (Create, Read, Update, Delete) işlemlerini gerçekleştirmek.
+ - **Raporlama ve Analiz**: Finansal veriler üzerinde raporlama ve analiz yapmak.
+ - **Modüler ve Test Edilebilir Kod**: Modüler yapıda, test edilebilir ve bakımı kolay bir kod tabanı oluşturmak.
+ - **Gerçek Hayat Senaryosu**: Finansal CRM gibi gerçek hayatta kullanılabilecek bir uygulama geliştirerek öğrenilenleri pratiğe dökmek.
+
+
+![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/818a3beb80afa83d294ea49732a172c475709198/FrmCategory.png)
+
+## Projenin İçeriği
+
+### Finansal İşlemler
+ - **İşlem Ekleme**: Müşterilerle yapılan finansal işlemlerin kaydedilmesi.
+ - **İşlem Güncelleme**: Finansal işlem bilgilerinin güncellenmesi.
+ - **İşlem Silme**: Finansal işlemlerin silinmesi.
+ - **İşlem Listeleme**: Tüm finansal işlemlerin listelenmesi.
+
+###  Veritabanı Tasarımı
+ - **MSSQL Veritabanı**: Müşteri ve finansal işlem bilgilerinin saklandığı veritabanı.
+ - **Tablo Yapısı**: Customers, FinancialTransactions gibi tabloların tasarımı.
+
+###  C# Backend Geliştirme
+ - **CRUD İşlemleri**: C# ile MSSQL üzerinde CRUD işlemlerinin gerçekleştirilmesi.
+ - **Business Logic**: İş mantığının C# ile uygulanması.
+ - **Data Access Layer (DAL)**: Veritabanı erişim katmanının oluşturulması.
+
+
+![Image Alt](https://github.com/aysekarapinar/CSharpEducationCampProject/blob/e3465da4f7888169eea0f954b6df4ee0339195ea/FrmLogin.png)
